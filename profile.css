@@ -1,0 +1,420 @@
+@import url("index.css");
+
+
+::-webkit-scrollbar {
+  width: 13px; /* Ширина скролл-бара */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #faf0c8; /* Цвет фона скролл-бара */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(54, 64, 77); /* Цвет полосы прокрутки */
+  border-radius: 25px; /* Радиус скругления */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #131313; /* Цвет полосы прокрутки при наведении */
+}
+
+body {
+	background: #faf0c8;
+}
+
+.nav-display {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.nav-display div a {
+	text-decoration: none;
+	color: #36404d;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.nav-display div a:hover {
+	opacity: 0.5;
+	transition: 25ms ease-in-out;
+}
+
+.burger-btn {
+  display: none; /* Скрываем по умолчанию */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: left 0.3s ease-in-out; /* Добавляем плавную анимацию */
+}
+
+.popup.open {
+  display: block; 
+  left: 0; /*  Показываем попап слева */
+}
+
+.popup nav {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  background-color: #dedede;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	opacity: 1;
+}
+
+.popup ul {
+	position: absolute;
+  list-style: none;
+	left: 40px;
+  top: 150px;
+}
+
+.popup li {
+  margin-bottom: 10px;
+}
+
+.popup a {
+  color: rgb(54, 64, 77);
+	text-decoration: none;
+}
+
+.popup a:hover {
+  opacity: 0.5;
+}
+
+.popup p {
+  font-size: 34px;
+}
+
+.close-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position: absolute;
+	left: 40px;
+  top: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+	transition: 300ms ease-in-out;
+}
+
+.close-button:hover {
+		transform: rotate(90deg);
+}
+
+
+
+@media (min-width: 1367px) and (max-width: 1919px) {
+
+  .burger-btn {
+    display: none;
+  }
+
+	.lama-display-block {
+		display: block !important;
+	}
+
+	.aembry-link p {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		font-size: 345px;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-links a {
+		font-size: 100px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+
+  .burger-btn {
+    display: none;
+  }
+
+	.lama-display-block {
+		display: block !important;
+	}
+
+	.aembry-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+	.aembry-link p {
+		font-size: 195px;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-links a {
+		font-size: 50px;
+	}
+}
+
+
+@media (min-width: 359px) and (max-width: 767px) {
+
+  .burger-btn {
+    display: block;
+  }
+
+	.lama-display-block {
+		display: block !important;
+	}
+
+	.bedge-word {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content:center;
+		text-align: center;
+		font-size: 100px;
+		font-weight: 300;
+	}
+
+	.bedge-text {
+		font-size: 90px;
+	}
+
+	.aembry-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.aembry-link p {
+		font-size: 100px;
+	}
+
+	.container-column {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+	
+
+	.my-skills p {
+		position: relative;
+		padding-bottom: 10px;
+		font-size: 22px;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.nav-display div a {
+		display:none;
+	}
+
+	.nav-links a {
+		font-size: 38px;
+		display: flex;
+		flex-direction: row;
+		margin-top: 10px;
+	}
+
+	.my-description p {
+		font-size: 22px;
+	}
+
+	.footer-navigation {
+		font-size: 14px;
+	}
+
+	footer {
+		margin-bottom: 30px;
+	}
+}
+
+.bedge-word {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:center;
+	text-align: center;
+	font-size: 125px;
+	font-weight: 300;
+}
+
+.bedge-text {
+	color:#36404d;
+	text-align: center;
+}
+
+.container-profile-info {
+	margin-top: 200px;
+	padding-bottom: 300px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-column {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	gap: 120px;
+}
+
+.my-skills {
+	padding: 10px;
+	width: 450px;
+	height: 450px;
+	color:#36404d;
+	font-size: 26px;
+	text-align:left;
+	border: 17px dotted rgb(54, 64, 77);
+}
+
+.text-padding-skills {
+	font-size: 35px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.skills-icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content:space-between;
+	align-items:center;
+	gap: 5px;
+}
+
+.card-icon {
+	margin: 0;
+	padding: 0;
+}
+
+.my-photo {
+	width: 450px;
+	height: 450px;
+	vertical-align: middle;
+	background-image: url("./resources/my-photo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius:6px;
+}
+
+.my-description {
+	padding: 10px;
+	width: 450px;
+	height: 450px;
+	color:#36404d;
+	font-size: 26px;
+	text-align:left;
+	border: 17px dotted rgb(54, 64, 77);
+}
+
+
+footer {
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+	height: 100px;
+	opacity: 0; /* Скрываем по умолчанию */
+  transition: opacity 300ms ease-in-out; /* Плавная анимация */
+}
+
+footer.visible {
+	opacity: 1; /* Показываем футер */
+}
+
+
+.footer-navigation {
+	display: flex;
+	padding-top: 25px;
+	border-top: 1px solid #36404d ;
+	width: 85%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	color:#36404d;
+}
+
+.footer-col {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.footer-li {
+	list-style: none;
+	text-decoration: none;
+}
+
+.footer-li li a {
+	text-decoration: none;
+	color:#36404d;
+}
+
+.footer-li li a:hover {
+	opacity: 0.5;
+	transition: 25ms ease-in-out;
+}
