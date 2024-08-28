@@ -96,4 +96,12 @@ const footer = document.querySelector('footer');
         messageBtn.style.transition = 'bottom 300ms ease-in-out';
       }
 
+      if (remainingHeight <= 100) {
+        backToTopButton.style.bottom = '135px',
+        backToTopButton.style.transition = 'bottom 300ms ease-in-out'; 
+      } else {
+        backToTopButton.style.bottom = '20px',
+        backToTopButton.style.transition = 'bottom 300ms ease-in-out';
+      }
+
   });

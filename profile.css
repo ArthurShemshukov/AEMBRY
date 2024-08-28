@@ -28,7 +28,7 @@ body {
 
 .back-to-top {
 	position: fixed;
-	top: 20px;
+	bottom: 20px;
 	left: 20px;
 	display: none; /* Кнопка скрыта по умолчанию */
 	border-radius: 50%;
@@ -100,8 +100,6 @@ body {
 }
 
 
-
-
 .nav-display {
 	position: relative;
 	display: flex;
@@ -162,6 +160,60 @@ body {
 	border-bottom-right-radius: 20px;
 }
 
+.form-popup-wrapper {
+	position: relative;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 26px;
+}
+
+.form-popup-wrapper h2 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.form-label-style {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-input-style[type="text"],
+	[type="email"],
+	[type="tel"],
+
+.form-textarea-style {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid rgb(54, 64, 77, 0.5);
+	border-radius: 3px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+.form-textarea-style {
+	height: 100px;
+}
+
+.submit-message-btn {
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(54, 64, 77);
+	color: white;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
 .popup ul {
 	position: absolute;
   list-style: none;
@@ -185,6 +237,8 @@ body {
 .popup p {
   font-size: 34px;
 }
+
+
 
 .close-button {
 	display: flex;
@@ -354,7 +408,6 @@ body {
 	}
 
 	.message-popup {
-		
 		width: 350px; 
 		height: 600px;
 	}
@@ -370,9 +423,97 @@ body {
 
 @media (min-width: 0px) and (max-width: 359px) {
 
+	.burger-btn {
+    display: block;
+  }
+
+	.lama-display-block {
+		display: block !important;
+	}
+
+	.bedge-word {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content:center;
+		text-align: center;
+		font-size: 100px;
+		font-weight: 300;
+	}
+
+	.bedge-text {
+		font-size: 90px;
+	}
+
+	.aembry-link {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.aembry-link p {
+		font-size: 100px;
+	}
+
+	.container-column {
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+	
+
+	.my-skills p {
+		position: relative;
+		padding-bottom: 10px;
+		font-size: 22px;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		align-items: start;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.nav-display div a {
+		display:none;
+	}
+
+	.nav-links a {
+		font-size: 38px;
+		display: flex;
+		flex-direction: row;
+		margin-top: 10px;
+	}
+
+	.my-description p {
+		font-size: 22px;
+	}
+
 	.message-popup {
-		width: 300px; 
-		height: 500px;
+		width: 350px; 
+		height: 600px;
+	}
+
+	.footer-navigation {
+		font-size: 14px;
+	}
+
+	footer {
+		margin-bottom: 30px;
+	}
+
+	.message-popup {
+		width: 90%; 
+		height: 550px;
 	}
 
 }

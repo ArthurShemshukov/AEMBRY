@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Aembry</title>
+	<title>Shemart</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap" rel="stylesheet">
@@ -43,8 +43,29 @@
 		<img src="./resources/form-chat-message.png" width="30px" height="30px"></button>
 		<div class="message-popup" id="message-popup">
 			<!-- Содержимое попапа -->
-			
-			
+			<div class="form-popup-wrapper">
+
+				<h2>Message Form</h2>
+		
+				<label class="form-label-style" for="name">Name:</label>
+				<input class="form-input-style" type="text" id="name" name="name" required>
+
+				<label class="form-label-style" for="name">Second Name:</label>
+				<input class="form-input-style" type="text" id="name" name="name" required>
+		
+				<label class="form-label-style"  for="phone">Phone Number:</label>
+				<input class="form-input-style" type="tel" id="phone" name="phone" required>
+		
+				<label class="form-label-style" for="email">E-mail:</label>
+				<input class="form-input-style" type="email" id="email" name="email" required>
+		
+				<label class="form-label-style" for="message">Subject:</label>
+				<textarea class="form-textarea-style" id="message" name="message" required></textarea>
+		
+				<button class="submit-message-btn" type="submit-message">SEND</button>
+			</div>
+
+
 			<button class="close-message-btn"><img src="./resources/carrot.profile.popup.close.png" width="30px" height="30px"></button>
 		</div>
 		<div class="message-popup-overlay"></div>

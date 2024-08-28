@@ -29,7 +29,7 @@ a, button {
 		display: block !important;
 	}
 
-	.aembry-link p {
+	.shemart-link p {
 		display: flex;
 		flex-direction: row;
 		margin: 0;
@@ -60,14 +60,14 @@ a, button {
 		display: block !important;
 	}
 
-	.aembry-link {
+	.shemart-link {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
 		margin: 0;
 	}
-	.aembry-link p {
+	.shemart-link p {
 		font-size: 170px;
 	}
 
@@ -100,7 +100,7 @@ a, button {
 	}
 
 
-	.aembry-link {
+	.shemart-link {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -108,7 +108,7 @@ a, button {
 		margin: 0;
 	}
 
-	.aembry-link p {
+	.shemart-link p {
 		font-size: 80px;
 	}
 
@@ -203,7 +203,7 @@ header {
 }
 
 
-.aembry-link {
+.shemart-link {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -215,7 +215,7 @@ header {
 	color: #faf0c8;
 }
 
-.aembry-link:hover {
+.shemart-link:hover {
 	color:rgb(54, 64, 77);
 	/*color:rgb(70, 200, 240);*/
 	opacity: 0.8;
@@ -253,7 +253,7 @@ header {
 }
 
 .profile-page-link:hover {
-	color:rgb(54, 64, 77);
+	color:#36404d;
 	/*color:rgb(70, 200, 240);*/
 	transition: 300ms ease-in-out;
 }
