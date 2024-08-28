@@ -1,5 +1,6 @@
 @import url("index.css");
 @import url("profile.css");
+@import url("catalog.css");
 
 
 
@@ -21,8 +22,18 @@
 }
 
 body {
-	background: #ffffff00;
+	background:#ffffff;
 	height: 100vh;
+}
+
+.back-to-top {
+	box-shadow: 1px 1px 6px 1px rgb(147, 147, 147);
+	background: #ffffff;
+}
+
+.message-btn {
+	box-shadow: 1px 1px 6px 1px rgb(147, 147, 147);
+	background: #ffffff;
 }
 
 .nav-display div a {
@@ -46,7 +57,7 @@ body {
   background-color: #131313;
 }
 
-@media (min-width: 359px) and (max-width: 767px) {
+	@media (min-width: 359px) and (max-width: 767px) {
 
 	.art-text {
 		font-size: 125px;
@@ -54,11 +65,11 @@ body {
 
 }
 
-
 /*---------main-------------*/
 
 
 .art-word {
+	margin: 0 auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -73,9 +84,6 @@ body {
 	color: #777777;
 	text-align: center;
 }
-
-
-
 
 
 

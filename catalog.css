@@ -25,6 +25,21 @@ body {
 	height: 100vh;
 }
 
+.back-to-top {
+	box-shadow: 1px 1px 6px 1px rgb(147, 147, 147);
+	background: #c8fad7;
+	z-index: 10;
+}
+
+.message-btn {
+	box-shadow: 1px 1px 6px 1px rgb(147, 147, 147);
+	background: #c8fad7;
+}
+
+.message-btn:hover {
+	opacity: 0.8;
+}
+
 .nav-display div a {
 	text-decoration: none;
 	color: #5a58f0;

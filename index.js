@@ -34,3 +34,66 @@ const footer = document.querySelector('footer');
       popup.classList.remove('open');
 
     });
+
+
+
+
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 100) {
+        backToTopButton.style.display = 'block'; 
+      } else {
+        backToTopButton.style.display = 'none'; 
+      }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    });
+
+
+
+    const messageBtn = document.querySelector('.message-btn');
+    const popupMessage = document.querySelector('.message-popup');
+    const closeMessageBtn = document.querySelector('.close-message-btn');
+    const overlay = document.querySelector('.message-popup-overlay');
+    const body = document.body;
+
+    messageBtn.addEventListener('click', () => {
+      popupMessage.classList.toggle('open');
+      popupMessage.style.display = 'block';
+      overlay.style.display = 'block';
+    });
+
+
+    closeMessageBtn.addEventListener('click', () => {
+      closePopup(); // Используем функцию для закрытия попапа
+    });
+
+    overlay.addEventListener('click', () => {
+      closePopup(); // Используем функцию для закрытия попапа
+    });
+
+    function closePopup() {
+      popupMessage.style.display = 'none';
+      overlay.style.display = 'none';
+      body.classList.remove('open');
+    }
+
+
+    window.addEventListener('scroll', () => {
+      const remainingHeight = document.body.scrollHeight - window.pageYOffset - window.innerHeight;
+    
+      if (remainingHeight <= 100) {
+        messageBtn.style.bottom = '135px',
+        messageBtn.style.transition = 'bottom 300ms ease-in-out'; 
+      } else {
+        messageBtn.style.bottom = '20px',
+        messageBtn.style.transition = 'bottom 300ms ease-in-out';
+      }
+
+  });
