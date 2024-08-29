@@ -103,16 +103,6 @@ body {
 		display: block !important;
 	}
 
-	.aembry-link {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
-	.aembry-link p {
-		font-size: 195px;
-	}
 
 
 	.nav-links {
@@ -166,17 +156,7 @@ body {
 		width: 100%;
 	}
 
-	.aembry-link {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
 
-	.aembry-link p {
-		font-size: 120px;
-	}
 
 
 	.nav-links {
@@ -218,7 +198,7 @@ body {
 	}
 
 	.catalog-text  {
-		font-size: 80px;
+		font-size: 70px;
 	}
 
 	.container-cards {
@@ -230,8 +210,8 @@ body {
 	}
 	
 	.catalog-card {
-		width: 400px;
-		height: 200px;
+		width: 90%;
+		height: 100px;
 	}
 
 	.catalog-card-link {

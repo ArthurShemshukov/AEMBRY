@@ -127,7 +127,6 @@ body {
   cursor: pointer;
 }
 
-
 .popup {
   display: none; 
   position: fixed;
@@ -135,9 +134,8 @@ body {
   left: 0;
   width: 100%; 
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 10;
-  transition: left 0.3s ease-in-out; /* Добавляем плавную анимацию */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .popup.open {
@@ -207,11 +205,16 @@ body {
 	display: flex;
 	flex-direction: row;
 	background-color: rgb(54, 64, 77);
+	box-shadow: 0 0 7px rgba(0, 0, 0);
 	color: white;
 	padding: 20px 20px;
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+}
+
+.submit-message-btn:hover {
+	opacity: 0.8;
 }
 
 .popup ul {
@@ -271,12 +274,6 @@ body {
 		display: block !important;
 	}
 
-	.aembry-link p {
-		display: flex;
-		flex-direction: row;
-		margin: 0;
-		font-size: 345px;
-	}
 
 	.nav-links {
 		display: flex;
@@ -302,13 +299,6 @@ body {
 		display: block !important;
 	}
 
-	.aembry-link {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
 	.aembry-link p {
 		font-size: 195px;
 	}
@@ -355,17 +345,6 @@ body {
 		font-size: 90px;
 	}
 
-	.aembry-link {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
-
-	.aembry-link p {
-		font-size: 100px;
-	}
 
 	.container-column {
 		width: 90%;
@@ -376,6 +355,14 @@ body {
 		align-items: center;
 		gap: 30px;
 	}
+
+	.home-link {
+		width: 70px;
+	}
+
+	.burger-carrot {
+		width: 50px;
+	}
 	
 
 	.my-skills p {
@@ -383,6 +370,16 @@ body {
 		padding-bottom: 10px;
 		font-size: 22px;
 	}
+
+	.form-popup-wrapper {
+		font-size: 16px;
+	}
+	
+	.form-popup-wrapper h2 {
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+	
 
 	.nav-links {
 		display: flex;
@@ -421,7 +418,7 @@ body {
 	}
 }
 
-@media (min-width: 0px) and (max-width: 359px) {
+@media (min-width: 0px) and (max-width: 358px) {
 
 	.burger-btn {
     display: block;
@@ -443,20 +440,9 @@ body {
 	}
 
 	.bedge-text {
-		font-size: 90px;
+		font-size: 70px;
 	}
 
-	.aembry-link {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		margin: 0;
-	}
-
-	.aembry-link p {
-		font-size: 100px;
-	}
 
 	.container-column {
 		width: 90%;
@@ -467,12 +453,42 @@ body {
 		align-items: center;
 		gap: 30px;
 	}
-	
+
+	.home-link {
+		width: 69px;
+	}
+
+	.burger-carrot {
+		width: 40px;
+	}
 
 	.my-skills p {
 		position: relative;
 		padding-bottom: 10px;
 		font-size: 22px;
+	}
+
+	.form-popup-wrapper {
+		border-radius: 5px;
+		font-size: 14px;
+	}
+	
+	.form-popup-wrapper h2 {
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+
+	.popup p {
+		font-size: 28px;
+	}
+
+	.close-message-btn img {
+		width: 20px;
+		height: 20px;
+	}
+
+	.submit-message-btn {
+		padding: 10px 10px;
 	}
 
 	.nav-links {
@@ -495,7 +511,7 @@ body {
 	}
 
 	.my-description p {
-		font-size: 22px;
+		font-size: 20px;
 	}
 
 	.message-popup {

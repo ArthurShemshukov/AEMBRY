@@ -99,6 +99,9 @@ a, button {
 		display: block !important;
 	}
 
+	.home-link {
+		width: 70px;
+	}
 
 	.shemart-link {
 		display: flex;
@@ -131,6 +134,29 @@ a, button {
 	.catalog-page-link {
 		padding-top: 50px;
 	}
+}
+
+@media (max-width: 358px) {
+
+	.home-link {
+		width: 70px;
+	}
+
+	.shemart-link p {
+		font-size: 60px;
+	}
+
+	.catalog-page-link {
+		padding-top: 50px;
+		margin: 0;
+	}
+
+	.nav-links a {
+		width: 80%;
+		font-size: 20px;
+		padding: 0 auto;
+	}
+
 }
 
 * {
