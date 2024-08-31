@@ -186,10 +186,6 @@ body {
 		margin-top: 10px;
 	}
 
-	.message-popup {
-		width: 90%; 
-		height: 600px;
-	}
 }
 
 @media (max-width: 358px) {
@@ -251,6 +247,11 @@ body {
 
 	footer {
 		margin-bottom: 30px;
+	}
+
+	.message-popup {
+		width: 90%; 
+		height: 600px;
 	}
 }
 

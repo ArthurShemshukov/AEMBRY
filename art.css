@@ -69,10 +69,6 @@ body {
 		font-size: 125px;
 	}
 
-	.message-popup {
-		width: 90%; 
-		height: 600px;
-	}
 
 }
 
@@ -80,6 +76,11 @@ body {
 
 	.art-text {
 		font-size: 70px;
+	}
+
+	.message-popup {
+		width: 90%; 
+		height: 600px;
 	}
 
 }
