@@ -1,7 +1,9 @@
 @import url("index.css");
 @import url("profile.css");
 
-
+a, button, img {
+  -webkit-tap-highlight-color: transparent;
+}
 
 ::-webkit-scrollbar {
   width: 13px; /* Ширина скролл-бара */

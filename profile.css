@@ -18,6 +18,10 @@
   background-color: #131313; /* Цвет полосы прокрутки при наведении */
 }
 
+a, button, img {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
 	margin: 0;
 	padding: 0;

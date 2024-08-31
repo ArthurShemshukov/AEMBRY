@@ -15,7 +15,7 @@
   background-color: #36404d; /* Цвет полосы прокрутки при наведении */
 }
 
-a, button {
+a, button, img {
   -webkit-tap-highlight-color: transparent;
 }
 
