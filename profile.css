@@ -412,7 +412,6 @@ body {
 		justify-content: center;
 		margin: 0;
 	}
-
 	.nav-display div a {
 		display:none;
 	}
@@ -429,7 +428,7 @@ body {
 	}
 
 	.message-popup {
-		width: 350px; 
+		width: 90%; 
 		height: 600px;
 	}
 

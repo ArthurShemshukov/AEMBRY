@@ -69,6 +69,11 @@ body {
 		font-size: 125px;
 	}
 
+	.message-popup {
+		width: 90%; 
+		height: 600px;
+	}
+
 }
 
 @media (max-width: 358px) {

@@ -185,6 +185,11 @@ body {
 		flex-direction: row;
 		margin-top: 10px;
 	}
+
+	.message-popup {
+		width: 90%; 
+		height: 600px;
+	}
 }
 
 @media (max-width: 358px) {
