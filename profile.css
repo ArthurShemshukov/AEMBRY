@@ -155,11 +155,16 @@ body {
   left: 0; /*  Показываем попап слева */
 }
 
+
+.menu-content.closed {
+  /* Скрываем попап */
+  transform: translateX(-100%); 
+}
+
 .popup nav {
 	position: absolute;
 	width: 65%;
 	height: 100%;
-  top: 50%;
   transform: translate(0%, -50%);
   background-color: #dedede;
   padding: 20px;
@@ -168,6 +173,7 @@ body {
 	opacity: 1;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
+	overflow-y: auto;
 }
 
 .form-popup-wrapper {

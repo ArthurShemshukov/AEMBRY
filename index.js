@@ -118,3 +118,59 @@ const footer = document.querySelector('footer');
 
   });
 
+
+  // swipe popup burger left //
+  
+
+  const burgerBtn = document.querySelector('.burger-btn');
+  const menuContent = document.querySelector('.menu-content');
+  //const popup = document.querySelector('.popup');
+  //const closeButton = document.querySelector('.close-button');
+
+  let startX = 0;
+  let isDragging = false;
+
+  // Открытие попапа при клике на кнопку "бургер"
+  burgerBtn.addEventListener('click', () => {
+    popup.classList.add('open');
+    menuContent.style.transform = 'translateX(0)'; // Сбрасываем transform 
+    document.body.style.overflow = 'hidden';
+  });
+
+  // Закрытие попапа по клику на кнопку "Закрыть"
+  closeButton.addEventListener('click', () => {
+    popup.classList.remove('open'); 
+    menuContent.style.transform = 'translateX(0)'; 
+  });
+
+  // Свайп для закрытия попапа
+  menuContent.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+    isDragging = true;
+    document.body.style.overflow = 'auto';
+  });
+
+  menuContent.addEventListener('touchmove', (event) => {
+    if (!isDragging) return;
+    event.preventDefault();
+    const currentX = event.touches[0].clientX;
+    const deltaX = currentX - startX;
+
+    if (deltaX < 0) {
+      menuContent.style.transform = `translateX(${deltaX}px)`;
+    }
+  });
+
+  menuContent.addEventListener('touchend', (event) => {
+    isDragging = false;
+    const currentX = event.changedTouches[0].clientX;
+    const deltaX = currentX - startX;
+
+    if (deltaX < -100) {
+      menuContent.style.transform = 'translateX(-100%)';
+      popup.classList.remove('open'); 
+    } else {
+      menuContent.style.transform = 'translateX(0)'; 
+      startX = 0; 
+    }
+  });
