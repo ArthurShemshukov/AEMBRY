@@ -1,5 +1,8 @@
 // появление footer когда доскроливаем до низа страницы//
 
+const body = document.body;
+
+
 const footer = document.querySelector('footer');
     let isFooterVisible = false; // Флаг для отслеживания видимости футера
 
@@ -27,17 +30,22 @@ const footer = document.querySelector('footer');
     //открытие / закрытие попапа nav-display при адаптивном экране//
 
     const burgerButton = document.querySelector('.burger-btn');
-    const popup = document.getElementById('burger-popup');
+    const popup = document.querySelector('.popup');
     const closeButton = document.querySelector('.close-button');
+    
 
     burgerButton.addEventListener('click', () => {
       popup.classList.toggle('open');
+      document.body.style.overflow = 'hidden'; 
     });
+
 
     closeButton.addEventListener('click', () => {
       popup.classList.remove('open');
-
+      document.body.style.overflow = 'auto';
     });
+
+
 
 // открытие / закрытие попапа form-message//
 
@@ -45,12 +53,12 @@ const footer = document.querySelector('footer');
     const popupMessage = document.querySelector('.message-popup');
     const closeMessageBtn = document.querySelector('.close-message-btn');
     const overlay = document.querySelector('.message-popup-overlay');
-    const body = document.body;
 
     messageBtn.addEventListener('click', () => {
       popupMessage.classList.toggle('open');
       popupMessage.style.display = 'block';
       overlay.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     });
 
 
@@ -66,6 +74,7 @@ const footer = document.querySelector('footer');
       popupMessage.style.display = 'none';
       overlay.style.display = 'none';
       body.classList.remove('open');
+      document.body.style.overflow = 'auto';
     }
 
     // появление клавиши для поднятия (области видимости) страницы вверх//
@@ -108,3 +117,4 @@ const footer = document.querySelector('footer');
       }
 
   });
+

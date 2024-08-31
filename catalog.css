@@ -156,9 +156,6 @@ body {
 		width: 100%;
 	}
 
-
-
-
 	.nav-links {
 		display: flex;
 		flex-direction: row;
@@ -259,6 +256,7 @@ body {
 	text-align: center;
 	column-gap: 250px;
 	row-gap: 125px;
+	
 }
 
 .catalog-card {
@@ -269,6 +267,7 @@ body {
 	height: 300px;
 	outline: 10px solid #5a58f0;
 	background: #131313;
+	
 }
 
 .catalog-card:hover {

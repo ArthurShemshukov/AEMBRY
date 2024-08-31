@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(54, 64, 77); /* Цвет полосы прокрутки */
+  background-color: #36404d; /* Цвет полосы прокрутки */
   border-radius: 25px; /* Радиус скругления */
 }
 
@@ -127,6 +127,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .popup {
   display: none; 
   position: fixed;
@@ -135,7 +137,7 @@ body {
   width: 100%; 
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 10;
 }
 
 .popup.open {
@@ -580,7 +582,8 @@ body {
 	color:#36404d;
 	font-size: 26px;
 	text-align:left;
-	border: 17px dotted rgb(54, 64, 77);
+	border-radius: 6px;
+	box-shadow: 1px 5px 30px  rgba(54, 64, 77, 0.7);
 }
 
 .text-padding-skills {
@@ -613,6 +616,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius:6px;
+	box-shadow: 1px 5px 30px  rgba(54, 64, 77, 0.9);
 }
 
 .my-description {
@@ -622,7 +626,8 @@ body {
 	color:#36404d;
 	font-size: 26px;
 	text-align:left;
-	border: 17px dotted rgb(54, 64, 77);
+	border-radius: 6px;
+	box-shadow: 1px 5px 30px  rgba(54, 64, 77, 0.7);
 }
 
 
