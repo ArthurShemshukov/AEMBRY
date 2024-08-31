@@ -69,18 +69,12 @@ body {
 		font-size: 125px;
 	}
 
-
 }
 
 @media (max-width: 358px) {
 
 	.art-text {
 		font-size: 70px;
-	}
-
-	.message-popup {
-		width: 90%; 
-		height: 600px;
 	}
 
 }

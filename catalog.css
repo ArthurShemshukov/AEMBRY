@@ -186,6 +186,7 @@ body {
 		margin-top: 10px;
 	}
 
+
 }
 
 @media (max-width: 358px) {
@@ -249,10 +250,6 @@ body {
 		margin-bottom: 30px;
 	}
 
-	.message-popup {
-		width: 90%; 
-		height: 600px;
-	}
 }
 
 .catalog-word {

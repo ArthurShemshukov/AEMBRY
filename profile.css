@@ -537,10 +537,6 @@ body {
 		font-size: 20px;
 	}
 
-	.message-popup {
-		width: 350px; 
-		height: 600px;
-	}
 
 	.footer-navigation {
 		font-size: 14px;
@@ -551,7 +547,7 @@ body {
 	}
 
 	.message-popup {
-		width: 90%; 
+		width: 80%; 
 		height: 550px;
 	}
 
