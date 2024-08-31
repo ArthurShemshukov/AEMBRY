@@ -210,12 +210,8 @@ header {
 	background: none;
 	border: none;
 	cursor: pointer;
-	transition: 400ms ease-in-out;
 }
 
-.burger-btn:hover {
-	transform: rotate(90deg) scale(1.5);
-}
 
 
 .home-link {

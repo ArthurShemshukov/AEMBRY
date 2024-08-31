@@ -15,7 +15,7 @@ a, button, img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #777777; /* Цвет полосы прокрутки */
+  background-color: rgb(119, 119, 119); /* Цвет полосы прокрутки */
   border-radius: 25px; /* Радиус скругления */
 }
 
@@ -57,6 +57,10 @@ body {
 
 .popup nav {
   background-color: #131313;
+}
+
+.burger-btn:active {
+	color: rgba(119, 119, 119, 0.5);
 }
 
 	@media (min-width: 359px) and (max-width: 767px) {

@@ -135,6 +135,10 @@ body {
 	outline: none; 
 }
 
+.burger-btn:active {
+	color: rgba(54, 64, 77, 0.5);
+}
+
 .lama-display-block {
 	outline: none; 
 }

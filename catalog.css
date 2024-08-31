@@ -63,6 +63,10 @@ body {
   background-color: rgb(54, 64, 77);
 }
 
+.burger-btn:active {
+	color: rgba(90, 88, 240, 0.5);
+}
+
 /*----------- HEADER------------------*/
 @media (min-width: 1367px) and (max-width: 1919px) {
 
